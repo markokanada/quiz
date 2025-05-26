@@ -3026,7 +3026,7 @@ A Shopify egy kereskedelmi, SaaS alapú e-commerce platform, nem nyílt forrásk
 
 ## 1. Mi az OOP alapvető célja?
 - [ ] A) Procedurális kód írása
-- [ ] B) Adatok és viselkedés egy egységbe zárása ✅
+- [ ] B) Adatok és viselkedés egy egységbe zárása 
 - [ ] C) Kizárólag matematikai műveletek
 - [ ] D) Alacsony szintű memóriakezelés
 
@@ -3041,7 +3041,7 @@ Az OOP fő célja, hogy az adatokat és a hozzájuk tartozó műveleteket objekt
 - [ ] A) Egységbezárás
 - [ ] B) Öröklődés
 - [ ] C) Polimorfizmus
-- [ ] D) Lineáris végrehajtás ✅
+- [ ] D) Lineáris végrehajtás 
 
 <details>
 <summary>Megoldás</summary>
@@ -3051,7 +3051,7 @@ Az OOP négy alapelve: egységbezárás, öröklődés, polimorfizmus, absztrakc
 </details>
 
 ## 3. Mit jelent az egységbezárás (encapsulation)?
-- [ ] A) Adatok elrejtése és védelme ✅
+- [ ] A) Adatok elrejtése és védelme 
 - [ ] B) Osztályok másolása
 - [ ] C) Kód optimalizálása
 - [ ] D) Függvények láncolása
@@ -3065,7 +3065,7 @@ Az egységbezárás azt jelenti, hogy az objektum belső állapotát csak meghat
 
 ## 4. Mi az osztály és az objektum kapcsolata?
 - [ ] A) Az osztály az objektum példánya
-- [ ] B) Az objektum az osztály példánya ✅
+- [ ] B) Az objektum az osztály példánya 
 - [ ] C) Teljesen független fogalmak
 - [ ] D) Azonos fogalmak
 
@@ -3078,7 +3078,7 @@ Az osztály egy tervrajz, az objektum pedig a tervrajz alapján létrehozott kon
 
 ## 5. Mit jelent az öröklődés (inheritance)?
 - [ ] A) Metódusok átnevezése
-- [ ] B) Új osztály létrehozása meglévő osztály alapján ✅
+- [ ] B) Új osztály létrehozása meglévő osztály alapján 
 - [ ] C) Kód újrafelhasználásának tiltása
 - [ ] D) Adatok törlése
 
@@ -3090,7 +3090,7 @@ Az öröklődés lehetővé teszi, hogy egy osztály megörökölje egy másik o
 </details>
 
 ## 6. Mi a polimorfizmus lényege?
-- [ ] A) Azonos interfész, különböző implementáció ✅
+- [ ] A) Azonos interfész, különböző implementáció 
 - [ ] B) Osztályok másolása
 - [ ] C) Kizárólag matematikai műveletek
 - [ ] D) Kód duplikálása
@@ -3103,7 +3103,7 @@ A polimorfizmus azt jelenti, hogy különböző osztályok ugyanazt a metódust 
 </details>
 
 ## 7. Mit jelent az absztrakció?
-- [ ] A] Komplexitás csökkentése lényeges jellemzők kiemelésével ✅
+- [ ] A] Komplexitás csökkentése lényeges jellemzők kiemelésével 
 - [ ] B] Minden részlet pontos megjelenítése
 - [ ] C] Kód minőségének mérése
 - [ ] D] Változók típusának elrejtése
@@ -3116,7 +3116,7 @@ Az absztrakció a felesleges részletek elrejtésével és a lényeges funkciók
 </details>
 
 ## 8. Mi a konstruktor szerepe?
-- [ ] A) Objektum inicializálása ✅
+- [ ] A) Objektum inicializálása 
 - [ ] B) Memória felszabadítása
 - [ ] C) Osztály törlése
 - [ ] D) Adatok titkosítása
@@ -3129,7 +3129,7 @@ A konstruktor speciális metódus, amely az objektum létrehozásakor fut le és
 </details>
 
 ## 9. Mi a különbség az interfész és az absztrakt osztály között?
-- [ ] A) Az interfész csak metódusokat deklarál, az absztrakt osztály implementálhat is ✅
+- [ ] A) Az interfész csak metódusokat deklarál, az absztrakt osztály implementálhat is 
 - [ ] B) Az absztrakt osztály csak statikus metódusokat tartalmazhat
 - [ ] C) Az interfész nem használható polimorfizmusra
 - [ ] D) Nincs lényegi különbség
@@ -3143,7 +3143,7 @@ Az interfész csak szerződést definiál, míg az absztrakt osztály részleges
 
 ## 10. Mit jelent a "has-a" kapcsolat?
 - [ ] A] Öröklődési viszony
-- [ ] B] Kompozíció vagy aggregáció ✅
+- [ ] B] Kompozíció vagy aggregáció 
 - [ ] C] Polimorfikus viselkedés
 - [ ] D] Statikus kapcsolat
 
@@ -3158,7 +3158,7 @@ A "has-a" kapcsolat azt jelenti, hogy egy osztály tartalmaz egy másik osztály
 - [ ] A) public
 - [ ] B) private
 - [ ] C) protected
-- [ ] D) static ✅
+- [ ] D) static 
 
 <details>
 <summary>Megoldás</summary>
@@ -3168,7 +3168,7 @@ A static nem hozzáférésmódosító, hanem azt jelzi, hogy az adott tag osztá
 </details>
 
 ## 12. Mi a metódus túlterhelés (overloading)?
-- [ ] A) Azonos névvel, de különböző paraméterlistával rendelkező metódusok ✅
+- [ ] A) Azonos névvel, de különböző paraméterlistával rendelkező metódusok 
 - [ ] B) Metódusok elrejtése
 - [ ] C) Metódusok törlése
 - [ ] D) Metódusok átnevezése
@@ -3181,7 +3181,7 @@ A túlterhelés lehetővé teszi, hogy egy metódusnév alatt különböző para
 </details>
 
 ## 13. Mit jelent a metódus felülírás (overriding)?
-- [ ] A) Szülőosztály metódusának újradefiniálása gyermekosztályban ✅
+- [ ] A) Szülőosztály metódusának újradefiniálása gyermekosztályban 
 - [ ] B] Metódus paramétereinek módosítása
 - [ ] C] Metódus törlése
 - [ ] D] Metódus más osztályba helyezése
@@ -3194,7 +3194,7 @@ A gyermekosztály felülírhatja a szülőosztály metódusait, hogy saját impl
 </details>
 
 ## 14. Mi a SOLID elv?
-- [ ] A) OOP tervezési alapelvek gyűjteménye ✅
+- [ ] A) OOP tervezési alapelvek gyűjteménye 
 - [ ] B) Adatbázis normalizálási szabály
 - [ ] C) Kódolási konvenció
 - [ ] D) Programozási nyelv
@@ -3207,7 +3207,7 @@ SOLID: Single Responsibility, Open-Closed, Liskov Substitution, Interface Segreg
 </details>
 
 ## 15. Mit jelent a "Single Responsibility Principle"?
-- [ ] A) Minden osztálynak egyetlen felelősséget kell vállalnia ✅
+- [ ] A) Minden osztálynak egyetlen felelősséget kell vállalnia 
 - [ ] B) Minden metódusnak egy műveletet kell végeznie
 - [ ] C) Minden változónak egy értéke lehet
 - [ ] D) Minden programnak egy fő funkciója legyen
@@ -3220,7 +3220,7 @@ Egy osztály csak egy okból kelljen változzon, csak egy szerepkörrel rendelke
 </details>
 
 ## 16. Mit jelent a "Liskov Substitution Principle"?
-- [ ] A] Gyermekosztályok helyettesíthetők legyenek szülőosztályaikkal ✅
+- [ ] A] Gyermekosztályok helyettesíthetők legyenek szülőosztályaikkal 
 - [ ] B] Minden osztálynak legyen konstruktora
 - [ ] C] Metódusok ne változtassák meg paramétereiket
 - [ ] D] Osztályok ne örököljenek egymástól
@@ -3233,7 +3233,7 @@ A gyermekosztályok ne szegjék meg a szülőosztály viselkedését.
 </details>
 
 ## 17. Mi a "Dependency Inversion Principle"?
-- [ ] A] Magas szintű modulok ne függjenek alacsony szintű moduloktól ✅
+- [ ] A] Magas szintű modulok ne függjenek alacsony szintű moduloktól 
 - [ ] B] Minden függőséget el kell távolítani
 - [ ] C] Osztályok ne használjanak interfészeket
 - [ ] D] Csak konkrét implementációkra lehet hivatkozni
@@ -3246,7 +3246,7 @@ Mindkettőnek absztrakcióktól kell függenie, ne konkrét implementációktól
 </details>
 
 ## 18. Mit jelent a "tell, don't ask" elv?
-- [ ] A] Objektumoknak parancsoljunk, ne kérdezzük állapotukat ✅
+- [ ] A] Objektumoknak parancsoljunk, ne kérdezzük állapotukat 
 - [ ] B] Mindig kérdezzük meg az objektum állapotát
 - [ ] C] Ne kommunikáljunk az objektumokkal
 - [ ] D] Csak statikus metódusokat használjunk
@@ -3259,7 +3259,7 @@ Az objektum maga döntse el, mit csináljon a saját állapotával, ne külső k
 </details>
 
 ## 19. Mi a "Law of Demeter"?
-- [ ] A] Objektum csak közvetlen ismerőseivel kommunikáljon ✅
+- [ ] A] Objektum csak közvetlen ismerőseivel kommunikáljon 
 - [ ] B] Minden osztálynak legyen dokumentációja
 - [ ] C] Metódusok ne legyenek hosszabbak 10 sornál
 - [ ] D] Ne használjunk privát változókat
@@ -3272,7 +3272,7 @@ Az objektum maga döntse el, mit csináljon a saját állapotával, ne külső k
 </details>
 
 ## 20. Mi az "anti-pattern" az OOP-ben?
-- [ ] A] Gyakori, de rossz tervezési megoldás ✅
+- [ ] A] Gyakori, de rossz tervezési megoldás 
 - [ ] B] OOP elvek szigorú betartása
 - [ ] C] Kód kommentelésének hiánya
 - [ ] D] Túl sok interfész használata
