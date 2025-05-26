@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Kvíz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kvíz </h1><h3>(az md fájl elérhető a <a href="https://github.com/markokanada/quiz">https://github.com/markokanada/quiz</a> oldalon)</h3>
+  <input type="file" id="fileInput" accept=".md">
+  <div>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <div id="quiz-container">
+    <div id="topic"></div>
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="nextBtn" style="display:none;">Következő kérdés</button>
+    <button id="overrideBtn" style="display:none;">Felülírás (Helyesnek számít)</button>
+    <div id="score"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
