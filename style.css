@@ -36,3 +36,16 @@ button {
   25% { transform: translateX(-5px); }
   75% { transform: translateX(5px); }
 }
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: left;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+code {
+  font-family: Consolas, monospace;
+  color: #333;
+}

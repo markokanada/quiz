@@ -6,8 +6,33 @@ let currentIndex = null;
 const LS_KEY = "kvizAppData";
 
 
-function escapeHTML(str) {
-  return str?.replace(/</g, '&lt;').replace(/>/g, '&gt;') ?? '';
+function escapeHTML(input) {
+  if (!input) return '';
+
+  
+  const codeBlocks = [];
+  input = input.replace(/```(\w*)\n([\s\S]*?)```/g, function (_, lang, code) {
+    const placeholder = `__CODE_BLOCK_${codeBlocks.length}__`;
+    const escapedCode = code
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+    codeBlocks.push(`<pre><code class="language-${lang}">${escapedCode}</code></pre>`);
+    return placeholder;
+  });
+
+  
+  input = input
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  
+  codeBlocks.forEach((block, i) => {
+    input = input.replace(`__CODE_BLOCK_${i}__`, block);
+  });
+
+  return input;
 }
 
 
@@ -60,8 +85,8 @@ function parseQuestions(mdText) {
       currentTopic = match[1].trim();
     } else if (match[2]) {
       const questionText = match[2].replace(/^\d+\.\s*/, '').trim();
-      const optionsRaw = match[3].split('<details>')[0];
-      const options = [...optionsRaw.matchAll(/- \[.\] (.*?)\n/g)].map(o => o[1]);
+      const fullBlock = match[3].split('<details>')[0].trim();
+      const options = [...fullBlock.matchAll(/- \[.\] (.*?)\n/g)].map(o => o[1]);
       const correctMatch = match[3].match(/\*\*(.*?)\*\*/);
       const correct = correctMatch ? correctMatch[1].trim().slice(0, 1) : null;
       const explanation = match[3].split('<summary>Megoldás</summary>')[1]?.trim();
@@ -69,6 +94,7 @@ function parseQuestions(mdText) {
       allQuestions.push({
         topic: currentTopic,
         question: questionText,
+        full: fullBlock,
         options,
         correct,
         explanation
@@ -105,7 +131,7 @@ function nextQuestion() {
   const q = allQuestions[currentIndex];
 
   topicDiv.textContent = "Témakör: " + q.topic;
-  questionDiv.innerHTML = escapeHTML(q.question);
+  questionDiv.innerHTML = escapeHTML(q.full); 
   optionsDiv.innerHTML = '';
 
   q.options.forEach((opt) => {
@@ -130,11 +156,14 @@ function nextQuestion() {
   });
 }
 
+
 function updateScore() {
   document.getElementById('score').textContent = `Eddigi eredmény: ${score} / ${askedQuestions.size}`;
 }
 
+
 document.getElementById('nextBtn').onclick = nextQuestion;
+
 
 document.getElementById('overrideBtn').onclick = () => {
   score++;
@@ -142,4 +171,3 @@ document.getElementById('overrideBtn').onclick = () => {
   saveProgress();
   document.getElementById('overrideBtn').style.display = 'none';
 };
-
